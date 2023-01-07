@@ -2,7 +2,7 @@
 <button (click)="title = ''">Reset?</button>
 
 <div *ngFor="let comp of compos; let i = index">
-    <app-xploring></app-xploring>
+    <app-xploring [parentText]="parentText"></app-xploring>
 </div>
 
 <router-outlet></router-outlet>

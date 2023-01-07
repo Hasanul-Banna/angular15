@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'xplore-angular';
-  compos: number[] = [1, 2, 3]
+  title = 'xplore-angular parent to child';
+  parentText = 'xplore-angular parent to child';
+  compos: number[] = [1, 2]
 
 }
