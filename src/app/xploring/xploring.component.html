@@ -1,0 +1,12 @@
+<p [ngStyle]="{color}" *ngIf="title !== ''; else typeSome">
+  {{ title }} works!
+</p>
+<p [ngClass]="{ 'bold-text': title.length > 10 }">{{ title }}</p>
+<ng-template #typeSome>
+  <p>type plz...</p>
+</ng-template>
+<input type="text" (input)="handleChange($event)" name="testEvent" id="1212" />
+<br />
+<button [disabled]="!isDisabled" (click)="changeTitle()">
+  click {{ getID() }}
+</button>

@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'xplore-angular';
+  compos: number[] = [1, 2, 3]
+
 }

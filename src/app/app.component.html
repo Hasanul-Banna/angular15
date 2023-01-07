@@ -1,3 +1,8 @@
 <input type="text" [(ngModel)]="title" />
-{{ title }}
+<button (click)="title = ''">Reset?</button>
+
+<div *ngFor="let comp of compos; let i = index">
+    <app-xploring></app-xploring>
+</div>
+
 <router-outlet></router-outlet>
