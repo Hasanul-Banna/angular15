@@ -1,6 +1,5 @@
 <p [ngStyle]="{color}" *ngIf="title !== ''; else typeSome">
-  {{ title }} works!
-  {{ parentText }} works!
+  {{ title }} works! <br> {{ parentText }} works!
 </p>
 
 <p [ngClass]="{ 'bold-text': title.length > 10 }">{{ title }}</p>
@@ -8,14 +7,11 @@
   <p>type plz...</p>
 </ng-template>
 
-<input
-  type="text"
-  (input)="handleChange($event)"
-  name="testEvent"
-  id="1212"
-/>
+<input type="text" (input)="handleChange($event)" name="testEvent" id="1212" />
 <br />
 
-<button [disabled]="!isDisabled" (click)="changeTitle('working!')">
-  click
-</button>
+<button class="" (click)="handleOutputClick(outputTitle)">outputTitle</button>
+
+<!-- <button [disabled]="!isDisabled" (click)="changeTitle(item)">
+  click {{ item }}
+</button> -->

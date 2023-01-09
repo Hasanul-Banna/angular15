@@ -6,8 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'xplore-angular parent to child';
-  parentText = 'xplore-angular parent to child';
-  compos: number[] = [1, 2]
+  title = 'xplore-angular';
+  parentText = 'parent to child';
+  compos: number[] = [99, 88]
 
+  handleRcvOutput(value: string): void {
+    this.parentText = value;
+  }
 }

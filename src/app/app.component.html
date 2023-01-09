@@ -2,7 +2,8 @@
 <button (click)="title = ''">Reset?</button>
 
 <div *ngFor="let comp of compos; let i = index">
-    <app-xploring [parentText]="parentText"></app-xploring>
+    <app-xploring [parentText]="parentText" (parentTextOutput)="handleRcvOutput($event)"></app-xploring>
 </div>
+<!-- <app-xploring *ngFor="let comp of compos; let i = index" [item]="comp"></app-xploring> -->
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> 
